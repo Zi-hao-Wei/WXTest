@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -40,9 +40,9 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.0.4",
+  "libVersion": "2.15.0",
   "appid": "wx3527a7fb5cbd54ec",
-  "projectname": "miniprogram-1",
+  "projectname": "ConnectTest",
   "debugOptions": {
     "hidedInDevtools": []
   },

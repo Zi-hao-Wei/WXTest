@@ -1,0 +1,14 @@
+<!--pages/mapTest/mapTest.wxml-->
+<view>Latitude: {{latitude}}</view>
+<view>Longitude: {{longitude}}</view>
+<view> Position now </view>
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" ></map>
+</view>
+<button bindtap="mapView">Choose Destination</button>
+<view>Des Latitude: {{desLatitude}}</view>
+<view>Des Longitude: {{desLongtitude}}</view>
+<view>Des Shown</view>
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true"  markers="{{markers}}"></map>
+</view>
