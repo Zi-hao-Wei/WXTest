@@ -25,7 +25,7 @@ Page({
   bindtest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb//WXTest',
+      url: 'http://1.15.123.232/YFTXWeb//WXTest',
       data:{
         userid:this.data.userid,
         nickname:this.data.nickname
@@ -58,7 +58,7 @@ Page({
 loginTest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb/login',
+      url: 'http://1.15.123.232/YFTXWeb/login',
       data:{
         UserID:1,
         UserNickname:"ZJZ"
@@ -79,7 +79,7 @@ loginTest:function()
   bookTest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb/book',
+      url: 'http://1.15.123.232/YFTXWeb/book',
       data:{
         UserID:1,
         Time:"12:10",
@@ -103,7 +103,7 @@ loginTest:function()
   orderTest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb/order',
+      url: 'http://1.15.123.232/YFTXWeb/order',
       data:{
         UserID:1,
       },
@@ -122,7 +122,7 @@ loginTest:function()
   chooseTest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb/choose',
+      url: 'http://1.15.123.232/YFTXWeb/choose',
       data:{
         RoomID:14,
       },
@@ -141,7 +141,7 @@ loginTest:function()
   chatroomTest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb/chatroom',
+      url: 'http://1.15.123.232/YFTXWeb/chatroom',
       data:{
         RoomID:14,
       },
@@ -160,7 +160,7 @@ loginTest:function()
   messageTest:function()
   {
     wx.request({
-      url: 'http://localhost:8080/YFTXWeb/message',
+      url: 'http://1.15.123.232/YFTXWeb/message',
       data:{
         RoomID:14,
         Time:"1",
