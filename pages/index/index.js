@@ -25,7 +25,7 @@ Page({
   bindtest:function()
   {
     wx.request({
-      url: 'http://1.15.123.232/YFTXWeb/WXTest',
+      url: 'http://localhost:8080/YFTXWeb//WXTest',
       data:{
         userid:this.data.userid,
         nickname:this.data.nickname
@@ -54,6 +54,131 @@ Page({
         console.log(".....fail.....");
       }
     })
-  }
+  },
+loginTest:function()
+  {
+    wx.request({
+      url: 'http://localhost:8080/YFTXWeb/login',
+      data:{
+        UserID:1,
+        UserNickname:"ZJZ"
+      },
+      method:'GET',
+      header:{
+        'content-type': 'application/json'
+      },
+      success: (res) =>{
+        console.log(res.data);
+      },
+      fail: function (res) {
+        console.log(".....fail.....");
+      }
+    })
+  },
+
+  bookTest:function()
+  {
+    wx.request({
+      url: 'http://localhost:8080/YFTXWeb/book',
+      data:{
+        UserID:1,
+        Time:"12:10",
+        DepartureLon:113.332264,
+        DepartureLat:23.156206,
+        DestinationLon:113.332264,
+        DestinationLat:23.156206,
+      },
+      method:'GET',
+      header:{
+        'content-type': 'application/json'
+      },
+      success: (res) =>{
+        console.log(res.data);
+      },
+      fail: function (res) {
+        console.log(".....fail.....");
+      }
+    })
+  },
+  orderTest:function()
+  {
+    wx.request({
+      url: 'http://localhost:8080/YFTXWeb/order',
+      data:{
+        UserID:1,
+      },
+      method:'GET',
+      header:{
+        'content-type': 'application/json'
+      },
+      success: (res) =>{
+        console.log(res.data);
+      },
+      fail: function (res) {
+        console.log(".....fail.....");
+      }
+    })
+  },
+  chooseTest:function()
+  {
+    wx.request({
+      url: 'http://localhost:8080/YFTXWeb/choose',
+      data:{
+        RoomID:14,
+      },
+      method:'GET',
+      header:{
+        'content-type': 'application/json'
+      },
+      success: (res) =>{
+        console.log(res.data);
+      },
+      fail: function (res) {
+        console.log(".....fail.....");
+      }
+    })
+  },
+  chatroomTest:function()
+  {
+    wx.request({
+      url: 'http://localhost:8080/YFTXWeb/chatroom',
+      data:{
+        RoomID:14,
+      },
+      method:'GET',
+      header:{
+        'content-type': 'application/json'
+      },
+      success: (res) =>{
+        console.log(res.data);
+      },
+      fail: function (res) {
+        console.log(".....fail.....");
+      }
+    })
+  },
+  messageTest:function()
+  {
+    wx.request({
+      url: 'http://localhost:8080/YFTXWeb/message',
+      data:{
+        RoomID:14,
+        Time:"1",
+        Content:"ABC",
+        UserNickname:"XWW",
+        UserID:2
+      },
+      method:'GET',
+      header:{
+        'content-type': 'application/json'
+      },
+      success: (res) =>{
+        console.log(res.data);
+      },
+      fail: function (res) {
+        console.log(".....fail.....");
+      }
+    })
+  },
 }
  )

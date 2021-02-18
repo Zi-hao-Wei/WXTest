@@ -10,6 +10,13 @@
      bindinput="nicknameInput" />
   </view>
 
-  <button bindtap="bindtest"> addUser </button>
+  <button bindtap="bindtest"> addUserOld </button>
+  <button bindtap="loginTest"> login </button>
+  <button bindtap="bookTest"> book </button>
+  <button bindtap="orderTest"> order </button>
+  <button bindtap="chooseTest"> choose </button>
+  <button bindtap="chatroomTest"> chatroom </button>
+  <button bindtap="messageTest"> message </button>
+
   <view>{{info}}</view>
 </view>
